@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "URL Grabber",
+  "version": "1.0",
+  "description": "A Chrome extension to grab the URL of the active tab.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "open-extension-popup": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U",
+        "mac": "Command+Shift+U"
+      },
+      "description": "Open the extension"
+    }
+  }
+}
